@@ -1,0 +1,13 @@
+# Dependency directory
+node_modules
+examples/**/node_modules
+coverage
+dist
+es
+lib
+_book
+# Logs
+*.log
+.DS_Store
+.idea
+examples/complete/react-native/ios/build

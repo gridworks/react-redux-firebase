@@ -1,0 +1,777 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Performance · React Redux Firebase</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../api/" />
+    
+    
+    <link rel="prev" href="ssr.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Read Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting_started.html">
+            
+                <a href="../getting_started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../auth.html">
+            
+                <a href="../auth.html">
+            
+                    
+                    Auth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../queries.html">
+            
+                <a href="../queries.html">
+            
+                    
+                    Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../populate.html">
+            
+                <a href="../populate.html">
+            
+                    
+                    Populate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../storage.html">
+            
+                <a href="../storage.html">
+            
+                    
+                    Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Recipes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="profile.html">
+            
+                <a href="profile.html">
+            
+                    
+                    Profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="auth.html">
+            
+                <a href="auth.html">
+            
+                    
+                    Auth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="actions.html">
+            
+                <a href="actions.html">
+            
+                    
+                    Actions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="epics.html">
+            
+                <a href="epics.html">
+            
+                    
+                    Epics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="routing.html">
+            
+                <a href="routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="roles.html">
+            
+                <a href="roles.html">
+            
+                    
+                    Roles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="populate.html">
+            
+                <a href="populate.html">
+            
+                    
+                    Populate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="upload.html">
+            
+                <a href="upload.html">
+            
+                    
+                    Upload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="thunks.html">
+            
+                <a href="thunks.html">
+            
+                    
+                    Redux Thunk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="redux-form.html">
+            
+                <a href="redux-form.html">
+            
+                    
+                    Redux Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="redux-persist.html">
+            
+                <a href="redux-persist.html">
+            
+                    
+                    Redux Persist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="redux-saga.html">
+            
+                <a href="redux-saga.html">
+            
+                    
+                    Redux Saga
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="react-native.html">
+            
+                <a href="react-native.html">
+            
+                    
+                    React Native
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="react-chrome-redux.html">
+            
+                <a href="react-chrome-redux.html">
+            
+                    
+                    React Chrome Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="ssr.html">
+            
+                <a href="ssr.html">
+            
+                    
+                    Server Side Rendering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.16" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../api/">
+            
+                <a href="../api/">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../api/constants.html">
+            
+                <a href="../api/constants.html">
+            
+                    
+                    constants
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../api/connect.html">
+            
+                <a href="../api/connect.html">
+            
+                    
+                    firebaseConnect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../api/reducer.html">
+            
+                <a href="../api/reducer.html">
+            
+                    
+                    firebaseStateReducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../api/props-firebase.html">
+            
+                <a href="../api/props-firebase.html">
+            
+                    
+                    props.firebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../api/get-firebase.html">
+            
+                <a href="../api/get-firebase.html">
+            
+                    
+                    getFirebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../api/compose.html">
+            
+                <a href="../api/compose.html">
+            
+                    
+                    reactReduxFirebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../api/helpers.html">
+            
+                <a href="../api/helpers.html">
+            
+                    
+                    helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../roadmap.html">
+            
+                <a href="../roadmap.html">
+            
+                    
+                    Roadmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../contributing.html">
+            
+                <a href="../contributing.html">
+            
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Performance</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="performance">Performance</h1>
+<p><strong>Note</strong>: Performance documentation is still in progress. Please feel free to reach out with over <a href="https://gitter.im/redux-firebase/Lobby" target="_blank">gitter</a> or through issues/pull requests with questions or input.</p>
+<h2 id="avoid-re-renders">Avoid Re-Renders</h2>
+<p>When optimizing performance in React application, minimizing re-renders of your components often comes first.</p>
+<h4 id="how">How?</h4>
+<p>Wait until after the <code>connect</code> function to convert to JS object from ImmutableJS map (<code>toJS</code> helper functions) if they are even necessary at all. This way common simple props comparison can correctly check for equality.</p>
+<h5 id="es6-class-reacts-purecomponent">ES6 Class (React&apos;s <code>PureComponent</code>)</h5>
+<p>React <a href="https://facebook.github.io/react/docs/react-api.html#react.purecomponent" target="_blank">exports <code>PureComponent</code></a>, which implements <code>shouldComponentUpdate()</code> with shallow prop and state comparison.</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> PureComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> compose <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> isLoaded<span class="token punctuation">,</span> isEmpty<span class="token punctuation">,</span> toJS <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-firebase&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Todos</span> <span class="token keyword">extends</span> <span class="token class-name">PureComponent</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> todos <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isLoaded</span><span class="token punctuation">(</span>todos<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>Loading<span class="token operator">...</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isEmpty</span><span class="token punctuation">(</span>todos<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>There are no todos<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token function">toJS</span><span class="token punctuation">(</span>todos<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// convert ImmutableJS Map to Array</span>
+        <span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>todo<span class="token punctuation">,</span> idx<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>div key<span class="token operator">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>todo<span class="token punctuation">.</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>idx<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">}</span><span class="token operator">&gt;</span> <span class="token comment" spellcheck="true">// key is unique to todo and its location in the list</span>
+              <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>owner<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+          <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">compose</span><span class="token punctuation">(</span>
+  <span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token string">&apos;todos&apos;</span> <span class="token comment" spellcheck="true">// { path: &apos;todos&apos; } // object notation</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    todos<span class="token punctuation">:</span> state<span class="token punctuation">.</span>firebase<span class="token punctuation">.</span><span class="token function">getIn</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;ordered&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;todos&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// pass the immutable map instead of converting to JS</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">(</span>Todos<span class="token punctuation">)</span>
+</code></pre>
+<h5 id="functional-recomposes-pure">Functional (recompose&apos;s <code>pure</code>)</h5>
+<p>What about with functional components? <a href="https://github.com/acdlite/recompose" target="_blank"><code>recompose</code></a> is a utility library for easily creating/working with functional components. One of the utilities <code>recompose</code> exports is called <code>pure</code>, which can be used like so:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> compose <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> pure <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;recompose&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> isLoaded<span class="token punctuation">,</span> isEmpty<span class="token punctuation">,</span> toJS <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-redux-firebase&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> Todos <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> todos <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isLoaded</span><span class="token punctuation">(</span>todos<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>Loading<span class="token operator">...</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isEmpty</span><span class="token punctuation">(</span>todos<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>There are no todos<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token function">toJS</span><span class="token punctuation">(</span>todos<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// convert ImmutableJS Map to Array</span>
+      <span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>todo<span class="token punctuation">,</span> idx<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>
+          <span class="token operator">&lt;</span>div key<span class="token operator">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>todo<span class="token punctuation">.</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>idx<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">}</span><span class="token operator">&gt;</span> <span class="token comment" spellcheck="true">// key is unique to todo and its location in the list</span>
+            <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>owner<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">compose</span><span class="token punctuation">(</span>
+  <span class="token function">firebaseConnect</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token string">&apos;todos&apos;</span> <span class="token comment" spellcheck="true">// { path: &apos;todos&apos; } // object notation</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    todos<span class="token punctuation">:</span> state<span class="token punctuation">.</span>firebase<span class="token punctuation">.</span><span class="token function">getIn</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;ordered&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;todos&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// pass the immutable map instead of converting to JS</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  pure
+<span class="token punctuation">)</span><span class="token punctuation">(</span>Todos<span class="token punctuation">)</span>
+</code></pre>
+<h4 id="why">Why?</h4>
+<p>Converting from an ImmutableJS Map object (how state is stored in <code>react-redux-firebase</code> v1) to a normal JS object (normally done with <code>toJS</code>, <code>dataToJS</code>, or <code>pathToJS</code>) creates a new &quot;reference&quot; any time the data changes. This in turn causes you component to re-render even if associated data has not changed.</p>
+<p>Immutable JS Map objects are supported by React&apos;s prop&apos;s comparison, which means that passing down a Map object will only cause a re-render when data has actually changed.</p>
+<p>Due to the difficult in usage this causes, <code>react-redux-firebase</code> v2 has been designed without ImmutableJS. There is plans to have future support for using Immutable, but it has not yet made it to the <a href="../roadmap.html">Roadmap</a>.</p>
+<h4 id="other-options">Other Options</h4>
+<ol>
+<li>Use <code>react-redux-firebase</code> v2, which was designed to work without ImmutableJS (partially for this reason)</li>
+<li>Make custom <code>shouldComponentUpdate</code> hooks for your Components</li>
+</ol>
+<h4 id="related-issues">Related Issues</h4>
+<ul>
+<li><a href="https://github.com/prescottprue/react-redux-firebase/issues/84" target="_blank">#84</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ssr.html" class="navigation navigation-prev " aria-label="Previous page: Server Side Rendering">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../api/" class="navigation navigation-next " aria-label="Next page: API Reference">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Performance","level":"1.7.16","depth":2,"next":{"title":"API Reference","level":"1.8","depth":1,"path":"docs/api/README.md","ref":"docs/api/README.md","articles":[{"title":"constants","level":"1.8.1","depth":2,"path":"docs/api/constants.md","ref":"docs/api/constants.md","articles":[]},{"title":"firebaseConnect","level":"1.8.2","depth":2,"path":"docs/api/connect.md","ref":"docs/api/connect.md","articles":[]},{"title":"firebaseStateReducer","level":"1.8.3","depth":2,"path":"docs/api/reducer.md","ref":"docs/api/reducer.md","articles":[]},{"title":"props.firebase","level":"1.8.4","depth":2,"path":"docs/api/props-firebase.md","ref":"docs/api/props-firebase.md","articles":[]},{"title":"getFirebase","level":"1.8.5","depth":2,"path":"docs/api/get-firebase.md","ref":"docs/api/get-firebase.md","articles":[]},{"title":"reactReduxFirebase","level":"1.8.6","depth":2,"path":"docs/api/compose.md","ref":"docs/api/compose.md","articles":[]},{"title":"helpers","level":"1.8.7","depth":2,"path":"docs/api/helpers.md","ref":"docs/api/helpers.md","articles":[]}]},"previous":{"title":"Server Side Rendering","level":"1.7.15","depth":2,"path":"docs/recipes/ssr.md","ref":"docs/recipes/ssr.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs","versions-select","ga"],"styles":{"website":"build/gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/prescottprue/react-redux-firebase/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"sans","size":2},"ga":{"configuration":"auto","token":"UA-102355407-1"},"versions":{"gitbookConfigURL":"https://raw.githubusercontent.com/prescottprue/react-redux-firebase/master/book.json","options":[{"value":"http://docs.react-redux-firebase.com/history/v1.4.0/","text":"Version 1.4.0"},{"value":"http://docs.react-redux-firebase.com/history/v1.5.0/","text":"Version 1.5.0","selected":true},{"value":"http://docs.react-redux-firebase.com/history/v2.0.0/","text":"Version 2.0.0"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/prescottprue/react-redux-firebase/tree/master"},"theme-default":{"styles":{"website":"build/gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React Redux Firebase","gitbook":">=3.2.1"},"file":{"path":"docs/recipes/performance.md","mtime":"2017-09-28T01:21:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-02T09:25:28.815Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

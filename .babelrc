@@ -1,0 +1,25 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    "lodash",
+    "add-module-exports",
+    "transform-object-rest-spread",
+    "transform-object-assign",
+    "transform-class-properties"
+  ],
+  "env": {
+    "es": {
+      "comments": false
+    },
+    "commonjs": {
+      "comments": false
+    },
+    "test": {
+      "plugins": [
+        "transform-runtime",
+        "transform-decorators-legacy",
+        "transform-async-to-generator"
+      ]
+    }
+  }
+}
